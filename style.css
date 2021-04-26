@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+ 
 }
 main{
     display: flex;
@@ -13,6 +13,12 @@ main{
     height: 36px;
     width: 98px;
     margin-right: 45px;
+    display: none;
+}
+@media( max-width: 375px) {
+    .box-menu{
+        display: block;
+    }
 }
 .menu{
     margin-left: 35px;
@@ -21,7 +27,7 @@ main{
     color: white;
    cursor: pointer;
 }
-@media( max-width: 375px) {
+@media( max-width: 375px){
     .menu{
         display: block;
     }
@@ -29,12 +35,13 @@ main{
 .box-tittle{
     display: flex;
     align-items: center;
-    margin-left: 70px;
+    margin-left: 90px;
+    font-family: 'Roboto', sans-serif;
 }
 .box-main{
     display: flex;
     align-items: center;
-    margin-left: 48rem;
+    margin-left: 44rem;
 }
 @media( max-width: 375px) {
     .box-main{
@@ -45,9 +52,45 @@ main{
     display: flex;
 }
 .paragraph{
-margin-left: 20px;
+margin-left: 30px;
 }
 .portfolio{
     margin-left: 20px;
-    font-size: larger;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}
+.container-box-oranger{
+display: flex;
+}
+.oranger-img{
+    width: 85rem;
+}
+.container-oranger{
+position: absolute;
+margin-top: 16rem;
+margin-left: 9rem;
+font-size: 40px;
+color: white;
+font-family: 'Roboto', sans-serif;
+}
+.box-paragraph{
+    position: absolute;
+margin-top: 22rem;
+margin-left: 9rem;
+font-size: 30px;
+color: white;
+}
+.box-img{
+    display: flex;
+  position: absolute;
+  left: 5rem;
+  top: 43rem;
+  flex-wrap: wrap;
+}
+.container-img{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  width: 290px;
+  height: 290px;
 }
